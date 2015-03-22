@@ -1,0 +1,11 @@
+
+/:
+    app\Controller\HelloController: init
+
+hello/{var1}/{var2}:
+    app\Controller\HelloController: helloJson
+
+hello/{var1}:
+    app\Controller\HelloController: hello
+
+

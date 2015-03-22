@@ -1,0 +1,38 @@
+{
+  "/": {
+    "app\\Controller\\HomeController": "init"
+  },
+  "user/{var1}": {
+    "app\\Controller\\HomeController": "userURL"
+  },
+  "smarty": {
+    "app\\Controller\\HomeController": "smarty"
+  },
+  "twig": {
+    "app\\Controller\\HomeController": "twig"
+  },
+  "eloquent": {
+    "app\\Controller\\DBController": "eloquent"
+  },
+  "pdo": {
+    "app\\Controller\\DBController": "pdo"
+  },
+  "404": {
+    "app\\Controller\\HomeController": "http404"
+  },
+  "json": {
+    "app\\Controller\\HomeController": "json"
+  },
+  "login": {
+    "app\\Controller\\AuthController": "login"
+  },
+  "logout": {
+    "app\\Controller\\AuthController": "logout"
+  },
+  "home": {
+    "app\\Controller\\AuthController": "home"
+  },
+  "quijote/{idioma}": {
+    "app\\Controller\\HomeController": "quijote"
+  }
+}
