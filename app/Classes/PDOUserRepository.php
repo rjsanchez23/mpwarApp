@@ -37,12 +37,17 @@ class PDOUserRepository implements  UserRepositoryInterface
 
     public function update($id, $name, $email)
     {
-        return $this->database->selectAll('user');
+        $user = array(
+            "name" => $name,
+            "email" => $email
+        );
+        return $this->database->update('user', $user);
     }
 
     public function remove($id)
     {
-        return $this->database->selectAll('user');
+
+        return $this->database->remove('user', $id);
     }
 
 }
