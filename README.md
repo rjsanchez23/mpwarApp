@@ -2,6 +2,7 @@
 -----------------------------------------------------------
 ##Requisitos:
 ----------------------------
+
 * php 5.4
 * mpstring
 
@@ -104,10 +105,11 @@ return new Response("texto o plantilla", http code(default 200));
  return new JsonResponse(array);
 ```
 * Utilización del service container:
+Accesible desde cualquier controlador, para usarlo fuera hay que instanciar una nueva clase container
 ```bash
  $this->container->get('service') 
 ```
-Accesible desde cualquier controlador, para usarlo fuera hay que instanciar una nueva clase container
+
 * Utilización del acceso a base de datos mediante PDO:
 ```bash
  $database = new SqlDatabase(); 
@@ -122,7 +124,7 @@ Accesible desde cualquier controlador, para usarlo fuera hay que instanciar una 
 new Eloquent(); //solo necesario para inicializarlo para usarlo mirar la documentación oficial
 ```
 * Paso de variables por URL:
-*definir el la ruta la variable entre llaves {}. Ej:
+*definir en la ruta la variable entre llaves {}. Ej:
 ```bash
 /usuario/{nombre}
 ```
