@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MPWAR Framework - Home</title>
+    <title>MPWAR Framework - 404</title>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css" />
@@ -27,7 +27,7 @@
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
 
-                Menú
+                <a href="/home">Menú</a>
 
             </li>
             <li>

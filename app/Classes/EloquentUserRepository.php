@@ -29,13 +29,25 @@ class EloquentUserRepository implements  UserRepositoryInterface
         return User::all()->toArray();;
     }
 
-    public function save(User $user)
+    public function create($name, $email)
     {
-        $this->db->save($user, 'users');
+        $user = new User();
+        $user->name = $name;
+        $user->email = $email;
+        $user->save();
     }
 
-    public function remove(User $user)
+    public function update($id, $name, $email)
     {
-        $this->db->remove($user, 'users');
+        $user = User::find($id);
+        $user->name = $name;
+        $user->email = $email;
+        $user->save();
+    }
+
+    public function remove($id)
+    {
+        $user = User::find($id);
+        $user->delete();
     }
 }

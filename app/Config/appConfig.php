@@ -4,8 +4,8 @@
 
 return array (
 
-    'env' => "dev",//pro
-    'configType' => 'json',//php, yml
-    'db_type' => 'mysql',
+    'env' => "pro",//pro
+    'configType' => 'yml',//php, yml
+    'db_type' => 'mysql',//actualmente solo soporta mysql
 
 );

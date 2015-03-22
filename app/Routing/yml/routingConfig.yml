@@ -1,11 +1,42 @@
 
 /:
-    app\Controller\HelloController: init
+    app\Controller\HomeController: init
 
-hello/{var1}/{var2}:
-    app\Controller\HelloController: helloJson
+user/{var1}:
+    app\Controller\HomeController: userURL
 
-hello/{var1}:
-    app\Controller\HelloController: hello
+smarty:
+    app\Controller\HomeController: smarty
 
+twig:
+    app\Controller\HomeController: twig
 
+eloquent:
+    app\Controller\DBController: eloquent
+
+pdo:
+    app\Controller\DBController: pdo
+
+newUser:
+    app\Controller\HomeController: formUsers
+
+create:
+    app\Controller\HomeController: create
+
+404:
+    app\Controller\HomeController: http404
+
+json:
+    app\Controller\HomeController: json
+
+login:
+    app\Controller\AuthController: login
+
+logout:
+    app\Controller\AuthController: logout
+
+home:
+    app\Controller\AuthController: home
+
+quijote/{idioma}:
+    app\Controller\HomeController: quijote

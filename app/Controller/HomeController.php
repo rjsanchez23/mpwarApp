@@ -51,6 +51,27 @@ class HomeController extends Controller
         return new Response($this->container->get('Twig')->render('userURL.tpl', 'userURL', $user));
 
     }
+    public function formUsers()
+    {
+        $userRepository = $this->container->get("EloquentUserRepository");
+        $users = $userRepository->findAll();
+
+        return new Response($this->container->get('Twig')->render('newUser.tpl', 'users', $users));
+
+
+
+    }
+    public function create()
+    {
+        $name = $this->request->post->getValue("name");
+        $email =  $this->request->post->getValue("email");
+        $userRepository = $this->container->get("PDOUserRepository");
+        $userRepository->create($name, $email);
+
+        $response = new Response("redirect");
+        $response->redirect("/newUser");
+
+    }
 
 
     public function json()

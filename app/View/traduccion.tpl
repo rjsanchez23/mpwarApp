@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MPWAR Framework - Home</title>
+    <title>MPWAR Framework - Traducción</title>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css" />
@@ -27,7 +27,7 @@
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
 
-                Menú
+                <a href="/home">Menú</a>
 
             </li>
             <li>
@@ -44,6 +44,9 @@
             </li>
             <li>
                 <a href="/pdo">Usuario en DB con PDO</a>
+            </li>
+            <li>
+                <a href="/newUser">Nuevo usuario</a>
             </li>
             <li>
                 <a href="/404">Respuesta Http 404</a>
@@ -67,9 +70,9 @@
                 <div class="col-lg-6 col-md-offset-3">
                     <h1>MPWAR Framework</h1>
                     <h2>Traducción "El Quijote"</h2>
-                    <a href="/quijote/es" class="black">Español</a>
-                    <a href="/quijote/en" class="black">Inglés</a>
-                    <a href="/quijote/fr" class="black">Frances</a><br><br>
+                    <a href="/quijote/es" class="black"> Español |</a>
+                    <a href="/quijote/en" class="black"> Inglés |</a>
+                    <a href="/quijote/fr" class="black"> Frances</a><br><br>
                     <p>{{ quijote }}</p>
 
                 </div>

@@ -5,6 +5,12 @@
   "user/{var1}": {
     "app\\Controller\\HomeController": "userURL"
   },
+  "newUser": {
+    "app\\Controller\\HomeController": "formUsers"
+  },
+  "create": {
+    "app\\Controller\\HomeController": "create"
+  },
   "smarty": {
     "app\\Controller\\HomeController": "smarty"
   },

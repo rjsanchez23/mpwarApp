@@ -27,7 +27,7 @@
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
 
-                   Menú
+                <a href="/home">Menú</a>
 
             </li>
             <li>
@@ -44,6 +44,9 @@
             </li>
             <li>
                 <a href="/pdo">Usuario en DB con PDO</a>
+            </li>
+            <li>
+                <a href="/newUser">Nuevo usuario</a>
             </li>
             <li>
                 <a href="/404">Respuesta Http 404</a>
@@ -66,7 +69,18 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Bienvenido Pablo a tu portal de administración</h1>
-                    <p>Este panel se compone de varios ejemplos sencillos utilizando el framework, desde el uso de diferentes motores de plantillas, hasta sel service container </p>
+                    <p>Este panel se compone de varios ejemplos sencillos utilizando el framework </p>
+                    <ul>
+                        <li>Plantilla Twig</li>
+                        <li>Plantilla Smarty</li>
+                        <li>Pasar usuario por URL</li>
+                        <li>Utilización de Eloquent</li>
+                        <li>Utilización de PDO</li>
+                        <li>Crear un nuevo usuario por PDO</li>
+                        <li>Enviar una respuesta HTTP 404</li>
+                        <li>Solicitud ajax para enviar una respuesta en formato Json</li>
+                        <li>Traducción del Quijote en diferentes idiomas</li>
+                    </ul>
 
                 </div>
             </div>
@@ -96,6 +110,9 @@
     /* Toggle Styles */
     html{
         height: 100%;
+    }
+    ul{
+        list-style: none;
     }
     .intro {
 

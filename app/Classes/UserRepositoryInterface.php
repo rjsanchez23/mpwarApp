@@ -13,6 +13,8 @@ use app\Model\User;
 interface UserRepositoryInterface
 {
     public function find($id);
-    public function save(User $user);
-    public function remove(User $user);
+    public function findAll();
+    public function create($name, $email);
+    public function update($id, $name, $email);
+    public function remove($id);
 }

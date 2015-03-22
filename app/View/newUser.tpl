@@ -2,23 +2,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+<title>MPWAR Framework - Nuevo usuario</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css" />
 
-    <title>MPWAR Framework - Twig</title>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css" />
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+ 
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+ 
 </head>
 <body class=" intro">
 <div id="wrapper">
@@ -26,8 +26,7 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-
-                <a href="/home">Menú</a>
+                <a href="/home">Menú</a> Menú
 
             </li>
             <li>
@@ -69,17 +68,44 @@
             <div class="row">
                 <div class="col-lg-6 col-md-offset-3">
                     <h1>MPWAR Framework</h1>
-                    <h2>Esta plantilla ha sido creada con Twig</h2>
-                    <h4>Estos son los datos personales de este usuario:</h4>
-                    <div class="col-lg-3 col-md-offset-3">
 
-                        <dl class="dl-horizontal">
-                            <dt>Nombre:</dt>
-                            <dd>{{ user.name }}</dd>
-                            <dt>Email:</dt>
-                            <dd>{{ user.email }}</dd>
-                        </dl>
-                    </div>
+                    <table class="table table-bordered text-center">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+
+                        </tr>
+                        <tbody>
+
+                            {% for user in users %}
+                            <tr>
+                            <td>{{ user.id }}</td>
+                            <td>{{ user.name }}</td>
+                            <td>{{ user.email }}</td>
+
+                            </tr>
+                            {% endfor %}
+
+                        </tbody>
+                    </table>
+                        <form method="POST" action="create">
+                            <div class="form-group">
+                                <label for="inputFName">Nombre</label>
+                                <input type="text" class="form-control" required="required" id="inputFName" value="" name="name" placeholder="Name">
+                                <span class="help-block"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputLName">Email</label>
+                                <input type="text" class="form-control" required="required" id="inputLName" value="" name="email" placeholder="Email">
+                                <span class="help-block"></span>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-success">Crear</button>
+
+                            </div>
+                        </form>
 
                 </div>
             </div>
@@ -89,7 +115,7 @@
 </div>
 <!-- /#wrapper -->
 
-
+ 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
 <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -215,6 +241,6 @@
         }
     }
 </style>
-
+ 
 </body>
 </html> 

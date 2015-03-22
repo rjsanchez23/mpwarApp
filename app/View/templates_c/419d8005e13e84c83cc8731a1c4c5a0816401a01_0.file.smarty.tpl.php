@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.22-dev/16, created on 2015-03-21 15:04:17
+<?php /* Smarty version 3.1.22-dev/16, created on 2015-03-22 12:14:55
          compiled from "../app/View/smarty.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:193133357550d7a61635464_19736119%%*/
+/*%%SmartyHeaderCode:1272206738550ea42f5ea7b1_31666506%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,25 +9,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '419d8005e13e84c83cc8731a1c4c5a0816401a01' => 
     array (
       0 => '../app/View/smarty.tpl',
-      1 => 1426880283,
+      1 => 1427022840,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '193133357550d7a61635464_19736119',
+  'nocache_hash' => '1272206738550ea42f5ea7b1_31666506',
   'variables' => 
   array (
     'user' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.22-dev/16',
-  'unifunc' => 'content_550d7a617aad58_30219488',
+  'unifunc' => 'content_550ea42f709a87_33407959',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_550d7a617aad58_30219488')) {
-function content_550d7a617aad58_30219488 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_550ea42f709a87_33407959')) {
+function content_550ea42f709a87_33407959 ($_smarty_tpl) {
 ?>
 <?php
-$_smarty_tpl->properties['nocache_hash'] = '193133357550d7a61635464_19736119';
+$_smarty_tpl->properties['nocache_hash'] = '1272206738550ea42f5ea7b1_31666506';
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +37,7 @@ $_smarty_tpl->properties['nocache_hash'] = '193133357550d7a61635464_19736119';
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
  
-<title>MPWAR Framework - Home</title>
+<title>MPWAR Framework - Smarty</title>
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css" />
@@ -62,7 +62,7 @@ $_smarty_tpl->properties['nocache_hash'] = '193133357550d7a61635464_19736119';
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
 
-                   Menú
+                <a href="/home">Menú</a>
 
             </li>
             <li>
@@ -79,6 +79,9 @@ $_smarty_tpl->properties['nocache_hash'] = '193133357550d7a61635464_19736119';
             </li>
             <li>
                 <a href="/pdo">Usuario en DB con PDO</a>
+            </li>
+            <li>
+                <a href="/newUser">Nuevo usuario</a>
             </li>
             <li>
                 <a href="/404">Respuesta Http 404</a>
