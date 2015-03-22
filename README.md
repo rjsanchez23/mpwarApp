@@ -4,6 +4,7 @@
 ----------------------------
 * mpstring
 * php 5.4
+----------------------------
 ##Instalación:
 ----------------------------
 * Como primer paso es necesario clonar el repositorio de la aplicación (incluye ejemplo de uso de componentes) :
@@ -87,8 +88,12 @@ $this->container->get('Smarty')->render('tamplate', 'nombre acceso en plantilla'
 * Utilización de clase Request:
 ```bash
 $request = $this->request->get //post,server,cookie,session
-$request = $this->request->isAjaxRequest() true/false si hay request ajax
 ```
+Se permite manejar : get, post, server, cookie, session
+```bash
+$request = $this->request->isAjaxRequest() 
+```
+true/false si hay request ajax
 * Utilización de clase Response:
 ```bash
 return new Response("texto o plantilla", http code(default 200));
@@ -99,8 +104,9 @@ return new Response("texto o plantilla", http code(default 200));
 ```
 * Utilización del service container:
 ```bash
- $this->container->get('service') // accesible desde cualquier controlador, para usarlo fuera hay que instanciar una nueva clase container
+ $this->container->get('service') 
 ```
+Accesible desde cualquier controlador, para usarlo fuera hay que instanciar una nueva clase container
 * Utilización del acceso a base de datos mediante PDO:
 ```bash
  $database = new SqlDatabase(); 
