@@ -71,6 +71,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">MPWAR<br>FRAMEWORK</h1>
                         <p class="intro-text">Bienvenido a MPWAR Framework<br>Creado por Ricardo Sánchez.</p>
+                        <p>Entrar en login para ver algunos casos de ejemplo.</p>
                        
                     </div>
                 </div>

@@ -4,7 +4,7 @@
 
 return array (
     'driver'    => 'mysql',
-    'host'      => 'raccoonweb.ddns.net',
+    'host'      => 'localhost',
     'database'  => 'users',
     'username'  => 'root',
     'password'  => 'root',
