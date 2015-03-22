@@ -45,7 +45,7 @@ app/Config/databaseConfig.php
 ```bash
 app/Config/dev/databaseConfig.php
 ```
-* Apuntar nuestro dominio a:
+* Crear un virtual host apuntando a la siguiente ruta:
 ```bash
 public/index.php
 ```
