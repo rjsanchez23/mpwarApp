@@ -11,7 +11,7 @@
 ----------------------------
 * Como primer paso es necesario clonar el repositorio de la aplicación (incluye ejemplo de uso de componentes) :
 ```bash
-$ git clone https://rjsanchez@bitbucket.org/rjsanchez/fwk.git mpwarApp
+$ git clone https://github.com/rjsanchez23/mpwarApp.git mpwarApp
 ```
 * Una vez clonado nuestro repositorio, necesitaremos instalar Composer (si ya lo tienes instalado, puedes omitir este paso) :
 ```bash
