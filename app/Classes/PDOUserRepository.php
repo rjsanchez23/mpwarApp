@@ -11,7 +11,6 @@ class PDOUserRepository implements  UserRepositoryInterface
     public function __construct($databaseConfig)
     {
         $this->database = $databaseConfig;
-        var_dump($this->database);
 
     }
 
